@@ -1,0 +1,167 @@
+{
+  "platform": {
+    "components": [
+      {
+        "images": [
+          {
+            "containers": "registry-v2.forcity.io", 
+            "key": "registrator", 
+            "name": "/platform/common/registrator", 
+            "tag": "latest"
+          }, 
+          {
+            "containers": "registry-v2.forcity.io", 
+            "key": "consul", 
+            "name": "/platform/common/consul", 
+            "tag": "latest"
+          }, 
+          {
+            "containers": "registry-v2.forcity.io", 
+            "key": "haproxy", 
+            "name": "/platform/common/haproxy", 
+            "tag": "latest"
+          }
+        ], 
+        "name": "common"
+      }, 
+      {
+        "images": [
+          {
+            "containers": "registry-v2.forcity.io", 
+            "key": "redis", 
+            "name": "/platform/core/redis", 
+            "tag": "latest"
+          }, 
+          {
+            "containers": "registry-v2.forcity.io", 
+            "key": "redis_visu", 
+            "name": "/platform/core/redis", 
+            "tag": "latest"
+          }, 
+          {
+            "containers": "registry-v2.forcity.io", 
+            "key": "coredbserver", 
+            "name": "/platform/core/core_db", 
+            "tag": "latest"
+          }, 
+          {
+            "containers": "registry-v2.forcity.io", 
+            "key": "cas", 
+            "name": "/platform/core/cas", 
+            "tag": "latest"
+          }, 
+          {
+            "containers": "registry-v2.forcity.io", 
+            "key": "mapserver", 
+            "name": "/platform/core/mapserver", 
+            "tag": "nightly"
+          }, 
+          {
+            "containers": "registry-v2.forcity.io", 
+            "key": "api", 
+            "name": "/platform/core/api", 
+            "tag": "nightly"
+          }, 
+          {
+            "containers": "", 
+            "key": "api_cache", 
+            "name": "nginx", 
+            "tag": "latest"
+          }, 
+          {
+            "containers": "registry-v2.forcity.io", 
+            "key": "celery_api", 
+            "name": "/platform/core/celery", 
+            "tag": "nightly"
+          }, 
+          {
+            "containers": "registry-v2.forcity.io", 
+            "key": "frontendconfig", 
+            "name": "/platform/core/frontendconfig", 
+            "tag": "nightly"
+          }, 
+          {
+            "containers": "registry-v2.forcity.io", 
+            "key": "nodejs", 
+            "name": "/platform/core/nodejs", 
+            "tag": "nightly"
+          }
+        ], 
+        "name": "core"
+      }, 
+      {
+        "images": [
+          {
+            "containers": "registry-v2.forcity.io", 
+            "key": "cimkit_db", 
+            "name": "/platform/modelrunner/cimkit_db", 
+            "tag": "nightly"
+          }, 
+          {
+            "containers": "registry-v2.forcity.io", 
+            "key": "lumis_db", 
+            "name": "/lumis/db", 
+            "tag": "latest"
+          }, 
+          {
+            "containers": "", 
+            "key": "broker", 
+            "name": "rabbitmq", 
+            "tag": "3-management"
+          }, 
+          {
+            "containers": "registry-v2.forcity.io", 
+            "key": "lumis", 
+            "name": "/lumis/core", 
+            "tag": "latest"
+          }, 
+          {
+            "containers": "registry-v2.forcity.io", 
+            "key": "pull_push", 
+            "name": "/lumis/pull_push", 
+            "tag": "latest"
+          }, 
+          {
+            "containers": "registry-v2.forcity.io", 
+            "key": "adapter", 
+            "name": "/lumis_public/adapter", 
+            "tag": "latest"
+          }, 
+          {
+            "containers": "registry-v2.forcity.io", 
+            "key": "hello_world", 
+            "name": "/lumis/hello_world", 
+            "tag": "latest"
+          }, 
+          {
+            "containers": "", 
+            "key": "elasticsearch", 
+            "name": "registry-v2.forcity.io/platform/core/fro", 
+            "tag": "2.1.2"
+          }
+        ], 
+        "name": "model_runner"
+      }, 
+      {
+        "images": [
+          {
+            "containers": "registry-v2.forcity.io", 
+            "key": "gsdbserver", 
+            "name": "/platform/geoserver/gsdb", 
+            "tag": "nightly"
+          }, 
+          {
+            "containers": "registry-v2.forcity.io", 
+            "key": "geoserver", 
+            "name": "/platform/geoserver/geoserver", 
+            "tag": "nightly"
+          }
+        ], 
+        "name": "geoserver"
+      }
+    ], 
+    "name": "all_in", 
+    "tag": "nightly:-latest",
+    "vcs": "git@github.com:sgareilforcity/version_platform.git"
+  }
+}
