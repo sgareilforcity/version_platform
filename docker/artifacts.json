@@ -140,7 +140,7 @@
             "tag": "2.1.2"
           }
         ], 
-        "name": "model_runner"
+        "name": "modelrunner"
       }, 
       {
         "images": [
